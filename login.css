@@ -1,0 +1,169 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #1db954, #191414);
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex_between {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex-direction: column;
+  }
+  
+  .centralize {
+    text-align: center;
+  }
+  
+  #Logo {
+    margin-bottom: 20px;
+  }
+  
+  #Logo h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+  }
+  
+  #Logo svg {
+    margin-left: 10px;
+  }
+  @keyframes color_change {
+    0% { color: blueviolet; }
+    25% { color: darkgray; }
+    50% { color: gray; }
+    75% { color: lightgray; }
+    100% { color: white; }
+  }
+
+  @keyframes color_change_svg {
+    0% { fill: blueviolet; }
+    25% { fill: darkgray; }
+    50% { fill: gray; }
+    75% { fill: lightgray; }
+    100% { fill: white; }
+  }
+#Logo h1{
+    animation-name: color_change;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+}
+
+#Logo svg{
+    animation-name: color_change_svg;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+}
+  
+  form{
+    width: 100% !important;
+  }
+  #Accesso {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+  }
+  
+  .submit input {
+    width: 100%;
+    padding: 10px;
+    background: #1db954;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit input:hover {
+    background: #1aa34a;
+  }
+  
+  #error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  #Iscrizione {
+    margin-top: 20px;
+  }
+  
+  #Iscrizione .signup {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  #iscrizione_button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #1db954;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #iscrizione_button a:hover {
+    background: #1aa34a;
+  }
+  
+  @media (max-width:1300px){
+    body{
+      display: block;
+    }
+    #Logo h1{
+      font-size:70px;
+    }
+    #Accesso{
+      width: auto;
+      position: relative;
+      top:10%;
+    }
+    form{
+      width: 50% !important;
+    }
+  }
+
+  @media (max-width:700px){
+    #Logo h1{
+      font-size:40px;
+    }
+  }

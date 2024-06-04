@@ -1,0 +1,133 @@
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin: 0;
+}
+header{
+    background-color: black;
+    padding: 0% 3%;
+}
+
+header img{
+    width: 20%;
+    height: 80%;
+}
+.flex_around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.5em;
+
+}
+
+.background_api{
+    background: rgb(0,255,38);
+    background: linear-gradient(261deg, rgba(0,255,38,1) 0%, rgba(43,143,30,1) 35%, rgba(37,37,37,1) 78%);
+    text-align: center;
+}
+
+
+
+#search h1,#search h3{
+    color:white;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+#search label{
+    color:white;
+    font-size: 1em;
+}
+#music{
+    height: 50%;
+    width: 60%;
+    fill: white;
+}
+input[type="text"]{
+    border-radius: 20px;
+    background-color: black;
+    color:white;
+
+}
+
+#result{
+    padding: 0% 1%;
+    height:100%;
+}
+.error{
+    font-size: 2em;
+    color:red;
+    font-weight: 500;
+}
+.scroll{
+    overflow-y: scroll;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    color:white;
+    font-size: 1em;
+}
+.grid div{
+    word-wrap: break-word;
+}
+
+.text_overflow{
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300px;
+}
+
+#image_spotify{
+    width: 270px;
+    height: 250px;
+}
+
+#addlike{
+    position: relative;
+    top: -32%;
+    right: -30%;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+#addlike:hover{
+    background-color: yellow;
+}
+.like{
+    filter: invert(23%) sepia(98%) saturate(7471%) hue-rotate(0deg) brightness(100%) contrast(105%);
+}
+.dislike{
+    filter: invert(23%) sepia(56%) saturate(74%) hue-rotate(0deg) brightness(100%) contrast(105%);
+}
+
+.card{
+    position: relative;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin: 3% 0%;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 99%;
+    column-gap: 2px;
+    border:6px solid  transparent;
+    border-image: linear-gradient(45deg, rgb(4, 234, 46), #7a0063) 1;
+}
+
+.hidden{
+    display: none;
+}

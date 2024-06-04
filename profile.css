@@ -1,0 +1,150 @@
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(121deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(0,17,240,1) 100%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header{
+    position: relative;
+    top:1%;
+}
+@keyframes fill_change {
+    from { fill-opacity: 0; } /* Colore iniziale trasparente */
+    to { fill-opacity: 1; } /* Colore finale bianco */
+  }
+  @keyframes color_change {
+    from { opacity: 0; } /* Colore iniziale trasparente */
+    to { opacity: 1; } /* Colore finale bianco */
+  }
+#header h1{
+    animation-name: color_change;
+    color:white;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#header svg{
+    fill:white;
+    animation-name: fill_change;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#photo_profile{
+    align-items: center;
+}
+#photo_profile h3{
+    color:white;
+}
+#photo_profile input[type="file"]{
+    margin-top: 1%;
+    background-color: white;
+}
+#container_photo_user{
+    width: 150px;
+    height: 150px;
+}
+#container_photo_user img{
+    width: 100%;
+    height: 100%;
+}
+.flex_center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-left: 2%;
+    color:white;
+}
+svg{
+    width: 5%;
+    height: 5%;
+    fill:white;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+#info{
+    width: 100%;
+    align-items: center;
+    position: relative;
+    top:15px;
+}
+.hidden_transition_DOWNTOP {
+    opacity: 0;
+    transform: translateY(-20PX);
+    transition: opacity 4s, transform 3s;
+  }
+  
+  .show_transition_DOWNTOP {
+    opacity: 1;
+    transform: translateY(0);
+}
+#setting{
+    width: 50%;
+    border-bottom: 3px dotted blue;
+    color:white;
+    font-size: 1.2em;
+}
+
+button{
+    background-color: BLACK ;
+    color:white;
+    border-radius: 30px;
+    padding: 2% 4%;
+    margin: 10% 2%;
+}
+
+input[type="text"],input[type="password"]{
+    height: 30px;
+    background-color: transparent;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+    background-color: black;
+    color:white
+}
+span{
+    margin-left: 1%;
+    color:red;
+
+}
+
+input[type="submit"]{
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    padding: 1% 3%;
+}
+
+#emoji svg{
+    width: 40px;
+    height: 55px
+}
+.grid_return{
+    display: grid;
+    grid-template-columns: 60% 60%;
+    column-gap: 20px;
+    margin-right: 8%;
+}
+.home{
+    margin-top: 4%;
+}
+.home a{
+    text-decoration: none;
+    color:white;
+    font-weight: bolder;
+    font-size: 1em;
+}

@@ -1,0 +1,206 @@
+
+#Subscribe{
+    position: relative;
+    top:15%
+}
+#Logo{
+    margin-right: 2%;
+}
+#Logo h1{
+    margin-top: 2% !important;
+}
+
+@keyframes color_change {
+    0% { color: red; }
+    25% { color: darkgray; }
+    50% { color: gray; }
+    75% { color: lightgray; }
+    100% { color: white; }
+  }
+
+  @keyframes color_change_svg {
+    0% { fill: red; }
+    25% { fill: darkgray; }
+    50% { fill: gray; }
+    75% { fill: lightgray; }
+    100% { fill: white; }
+  }
+#Logo h1{
+    animation-name: color_change;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+}
+
+#Logo svg{
+    animation-name: color_change_svg;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+}
+
+.contaier_form{
+    padding: 4% 2%;
+    background-color: rgba(9, 2, 48, 0.578);
+    width: 35%;
+    border-radius: 10%;
+}
+form{
+    width: 100%;
+    padding: 3% 5%;
+    margin-top: 4%;
+    border:2px dashed white;
+    background-color: rgba(8, 8, 181, 0.389);
+}
+
+
+input[type="text"], input[type="password"]{
+    height: 20px;
+    margin-left: 3%;
+}
+
+.error{
+    color: red;
+    font-weight: 700;
+}
+form svg{
+    fill: red;
+    height: 10px;
+    width: 10px;
+}
+label{
+    color:white;
+}
+.name,.surname, .username, .email, .check_email, .password ,.check_password, .allow{
+    margin-bottom: 2%
+}
+.flex_between{
+    display:flex;
+    justify-content:space-between;
+}
+.hidden{
+    display: none;
+}
+input[type="submit"] {
+    background-color: #1e90ff; /* Original background color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(135deg, #1e90ff, #1c7ed6);
+    position: relative;
+    overflow: hidden;
+}
+
+input[type="submit"]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+input[type="submit"]:hover {
+    background-color: #1c7ed6;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover::before {
+    width: 400%;
+    height: 400%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.signup, .signup a{
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.signup a:hover{
+    color:blue;
+}
+
+input[type="text"]:focus,input[type="password"]:focus{
+    background-color: rgba(42, 155, 189, 0.527);
+}
+#Access{
+    position: relative;
+    top: -3%;
+    right: -13%;
+    width: 30%
+}
+
+@keyframes padding_large{
+    from{padding: 0.5% 4%;}
+    to{padding: 0.5% 6%;}
+}
+    
+#Access button {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    margin-top: 2%;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+    }
+    
+#Access button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+    }
+    
+#Access button:hover::before {
+    width: 9em;
+       }
+
+#Access a:hover{
+    color:black;
+}
+@media (max-width:1100px){
+    #Subscribe{
+        flex-direction: column;
+    }
+    #Access{
+        position: relative;
+        top: 15%;
+        left: 35%;
+    }
+    .contaier_form{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:400px){
+    #Subscribe{
+        top:0%
+    }
+    #Access{
+        position: relative;
+        top: 4%;
+        left: 35%;
+    }
+}

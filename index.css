@@ -1,0 +1,89 @@
+body{
+    background: rgb(242,228,235);
+    background: linear-gradient(243deg, rgba(242,228,235,1) 0%, rgba(0,47,251,1) 0%, rgba(32,31,31,1) 63%);
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+position_relative{
+    position: relative;
+    top:20%
+}
+.flex_center{
+    display:flex;
+    justify-content:center;
+}
+#Logo{
+    color:white;
+    font-size: 2em;
+}
+#Logo h1{
+    margin: 0;
+    font-weight: bold;
+}
+svg{
+    fill: white;
+    width: 81px;
+    height: 74px;
+}
+.column{
+    flex-direction: column;
+}
+.centralize{
+   align-items: center;
+}
+#Welcome{
+    position: relative;
+    top:20%;
+    word-wrap: break-word;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+  
+
+#Welcome h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    width: 70%;
+  }
+  
+  .button {
+    background-color: #1db954;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #14833b;
+  }
+  
+@media (max-width:900px){
+  #Welcome{
+    top:10%;
+    padding: 0px;
+  }
+  #Welcome h1{
+    width: 90%;
+  }
+  
+}
